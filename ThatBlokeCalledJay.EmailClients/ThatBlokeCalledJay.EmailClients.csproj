@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <Authors>Jay Clark</Authors>
+    <Company>ThatBlokeCalledJay</Company>
+    <Description>Common email clients.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Source\Repos\My Repos\ThatBlokeCalledJay.Tools\ThatBlokeCalledJay\ThatBlokeCalledJay.EmailClients\ThatBlokeCalledJay.EmailClients\bin\Debug\netstandard2.0\ThatBlokeCalledJay.EmailClients.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Source\Repos\My Repos\ThatBlokeCalledJay.Tools\ThatBlokeCalledJay\ThatBlokeCalledJay.EmailClients\ThatBlokeCalledJay.EmailClients\bin\Release\netstandard2.0\ThatBlokeCalledJay.EmailClients.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>
