@@ -50,8 +50,8 @@ namespace ThatBlokeCalledJay.EmailClients.SendGrid
 
                 var success = response.StatusCode.IsSuccessStatusCode();
 
-                var message = response.StatusCode.IsSuccessStatusCode()
-                    ? "OK"
+                var message = success 
+                    ? "OK" 
                     : $"SendGrid response indicates failure: {(int)response.StatusCode} {response.StatusCode}.";
 
                 var result = new SendResult(success, message);
